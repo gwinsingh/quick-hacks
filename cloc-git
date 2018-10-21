@@ -3,3 +3,17 @@ git clone --depth 1 "$1" temp-linecount-repo &&
   printf "('temp-linecount-repo' will be deleted automatically)\n\n\n" &&
   cloc temp-linecount-repo &&
   rm -rf temp-linecount-repo
+
+#Installation
+
+#This script requires CLOC (“Count Lines of Code”) to be installed. 
+#Cloc can probably be installed with your package manager – e.g, brew install cloc with Homebrew.
+
+#Save file cloc-git
+#Run chmod +x cloc-git,
+#Move the file to a folder in your $PATH such as /usr/local/bin.
+
+#Usage
+#The script takes one argument, which is any URL that git clone will accept. 
+#Examples are https://github.com/evalEmpire/perl5i.git (HTTPS) or git@github.com:evalEmpire/perl5i.git (SSH). 
+#You can get this URL from any GitHub project page by clicking “Clone or download”.
